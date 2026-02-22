@@ -1,23 +1,4 @@
-<think>
-O usuário está dizendo para esquecer o Valentine's Day e que o site tem um erro. Preciso entender qual é o erro. Vou analisar o código que criei:
-
-1. O código tem perguntas de quiz
-2. A primeira pergunta é "Eu sou chato?" com opções "claro q nao" e "Sim MUITO"
-3. A segunda pergunta é "vc tem certeza???" com opções "NAOOO ME FORÇARAM" e "EU DISSE SIM"
-4. Por fim, mostra uma imagem de iPhone para clicar
-
-O usuário mencionou que há um erro. Provavelmente o erro é que quando a pessoa erra a resposta, deveria mostrar um "X" na tela e deixar tentar novamente, mas talvez o código não esteja funcionando corretamente.
-
-Vou criar uma versão mais simples e funcional do quiz, removendo a referência ao Valentine's Day e garantindo que o código funcione corretamente.
-
-O problema pode ser:
-1. O JavaScript não está funcionando
-2. A lógica de mostrar/ocultar elementos não está funcionando
-3. O X de errado não está aparecendo
-
-Vou criar uma versão mais robusta e simples do código.
-
-</think>```html
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -85,7 +66,6 @@ Vou criar uma versão mais robusta e simples do código.
 
         .quiz-container {
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
             border-radius: 30px;
             padding: 50px 40px;
             max-width: 600px;
@@ -126,10 +106,6 @@ Vou criar uma versão mais robusta e simples do código.
         .option:hover {
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 10px 30px rgba(255, 105, 180, 0.6);
-        }
-
-        .option:active {
-            transform: translateY(0) scale(0.98);
         }
 
         .wrong-mark {
@@ -298,7 +274,7 @@ Vou criar uma versão mais robusta e simples do código.
 
         <div class="iphone-container" id="iphoneContainer">
             <div class="question">TOMA ISSO ENTAO</div>
-            <img src="iphone13rosa.png" alt="iPhone 13 Rosa" class="iphone-image" onclick="final()">
+            <img src="iphone13rosa.jpg" alt="iPhone 13 Rosa" class="iphone-image" onclick="final()">
             <p class="iphone-text">Clique no iPhone!</p>
         </div>
 
